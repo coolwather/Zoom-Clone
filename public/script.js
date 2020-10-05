@@ -71,7 +71,7 @@ $('html').keydown((e) => {
 });
 
 socket.on('createMessage', message => {
-    $('.messages').append(`<li class="message"><b>User</b><br>${message}</li>`);
+    $('.messages').append(`<li class="message"><b>Usuário</b><br>${message}</li>`);
 });
 
 const scrollToBottom = () => {
@@ -93,7 +93,7 @@ const muteUnmute = () => {
 const setMuteButton = () => {
     const html = `
         <i class="fas fa-microphone"></i>
-        <span>Mute</span>
+        <span>Microfone</span>
     `;
     document.querySelector('.main__mute_button').innerHTML = html;
 }
@@ -101,7 +101,7 @@ const setMuteButton = () => {
 const setUnmuteButton = () => {
     const html = `
         <i class="unmute fas fa-microphone-slash"></i>
-        <span>Unmute</span>
+        <span>microfone</span>
     `;
 
     document.querySelector('.main__mute_button').innerHTML = html
@@ -122,7 +122,7 @@ const playStop = () => {
 const setStopVideo = () => {
     const html = `
         <i class="fas fa-video"></i>
-        <span>Stop Video</span>
+        <span>Vídeo</span>
     `;
     document.querySelector('.main__video_button').innerHTML = html;
 }
@@ -130,7 +130,7 @@ const setStopVideo = () => {
 const setPlayVideo = () => {
     const html = `
         <i class="unmute fas fa-video-slash"></i>
-        <span>Stop Video</span>
+        <span>Vídeo</span>
     `;
     document.querySelector('.main__video_button').innerHTML = html;
 }
